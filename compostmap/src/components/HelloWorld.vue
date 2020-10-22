@@ -1,7 +1,14 @@
 <template>
-  <h1>{{ msg }}</h1>
-  Bienvenue sur mon app {{ title }}<br />
-  <button v-on:click="title += '$'">Modifier titre</button>
+  <h1>{{ title }}</h1>
+  {{ subtitle }}<br />
+  <button
+    v-on:click="
+      title += '$';
+      subtitle += '€';
+    "
+  >
+    Modifier
+  </button>
 </template>
 
 <script>
@@ -10,6 +17,7 @@ export default {
   data() {
     return {
       title: "Compostmap",
+      subtitle: "L'application qui va changer le monde",
     };
   },
 };
