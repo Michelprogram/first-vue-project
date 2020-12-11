@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld msg="CompostMap" />
+  <Composter />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Composter from "./components/Composter.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Composter,
   },
 };
 </script>
