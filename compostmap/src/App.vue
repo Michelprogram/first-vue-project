@@ -1,15 +1,26 @@
 <template>
-  <Composter />
+
+  <div>
+      <MenuView />
+
+      <div class="container">
+        <router-view />
+      </div>
+
+
+  </div>
+
+
 </template>
 
 <script>
-import Composter from "./components/Composter.vue";
+import MenuView from "@/components/MenuView.vue"
 
 export default {
   name: "App",
   components: {
-    Composter,
-  },
+    MenuView
+  }
 };
 </script>
 
@@ -21,5 +32,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+  height: 100vh;
+}
+
+.app-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
